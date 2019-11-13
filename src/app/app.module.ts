@@ -10,6 +10,13 @@ import { RigisterComponent } from './rigister/rigister.component';
 import { AboutComponent } from './about/about.component';
 import { FlightlistMultyComponent } from './flightlist-multy/flightlist-multy.component';
 import { CardPaymentComponent } from './card-payment/card-payment.component';
+import { FormsModule } from '@angular/forms';
+import { UserService } from './services/user.service';
+import { HttpClientModule ,HTTP_INTERCEPTORS } from '@angular/common/http'; 
+import { AlertService } from './services/alert.service';
+
+
+
 
 
 @NgModule({
@@ -24,9 +31,11 @@ import { CardPaymentComponent } from './card-payment/card-payment.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService,AlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

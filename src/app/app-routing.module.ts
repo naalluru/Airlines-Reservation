@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 
 import { FlightlistMultyComponent } from './flightlist-multy/flightlist-multy.component';
 import { CardPaymentComponent } from './card-payment/card-payment.component';
+import { HeaderComponent } from './header/header.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path:"",component:FlightlistMultyComponent},
   {path:"flights",component:FlightlistMultyComponent},
   {path:"payment",component:CardPaymentComponent},
-  {path:"about",component:AboutComponent}
+  {path:"header",component:HeaderComponent}
   
   
 ];
